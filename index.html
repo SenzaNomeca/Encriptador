@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="header">
+        <a class="header__logo"  href="https://www.aluracursos.com"><img class="logo" src="assets/img/Logo.png" alt="Logo Alura" /></a>
+        <a class="header__title" href="index.html">Encriptador y desencriptador de texto</a>
+    </header>
+    <main class="presentacion">
+        <section class="content">
+            <div class="content__left">
+                <div class="content__encriptar">
+                    <textarea class="encriptar__text" name="message" id="palabrasUsuario" placeholder="Ingrese texto aqui" required></textarea>
+                </div>
+                <div class="content__button__send">
+                    <div class="button__warning">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="content__warnign">Solo letras minúsculas y sin acentos</span>  
+                    </div>
+                    
+                    <div class="buttons">
+                        <button onclick="encriptarTexto();" id="encriptar" class="content__button encriptar">Encriptar</button>
+                        <button onclick="desencriptarTexto();" class="content__button desencriptar"  id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            <div class="content__right" id="contenedorDeRespuesta">
+                <img src="assets/img/Muñeco.png" alt="Dibujo" id="answerDibujo" class="answer__Dibujo" />
+                <p class="answer__label" id="answerLabel"></p>
+                <p class="answer__text" id="answerText"></p>
+                <button onclick="copiar();" class="button__copiar" id="botonCopiar">Copiar</button>
+            </div>
+            
+            
+        
+        
+
+    </main>
+    <footer class="footer">
+        <p>Desallorrado por Roberto Rodriguez</p>
+    </footer>
+
+    <script src="assets/JS/logica.js" defer></script>
+</body>
+</html>
